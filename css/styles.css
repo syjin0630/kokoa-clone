@@ -1,27 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import "reset.css";
+@import "status-bar.css";
+@import "variables.css";
+
 body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-.status-bar {
+.welcome-header {
+    margin: 78px 0px;
+    text-align: center;
     display: flex;
-    justify-content: center;
-}
-.status-bar__column {
-width: 33%;
-}
-
-.status-bar__column:first-child span {
-    margin-right: 5px;
-}
-.status-bar__column:nth-child(2) {
-   display: flex;
-   justify-content: center;
-}
-.status-bar__column:last-child {
-    display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
 }
-.status-bar__column .fa-battery-full {
-    margin: 0px 5px;
+.welcome-header__title {
+    margin-bottom: 34px;
+    font-size: 40px;
+    font-weight: 600;
 }
+
+.welcome-header__text {
+    width: 55%;
+    opacity: 0.7;
+    font-size: 20px;
+}
+#Login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+
+#Login-form input {
+    padding: 15px 0px;
+    border: none;
+    font-size: 17px;
+    margin-bottom: 25px;
+    
+}
+
+#Login-form input:not([type="submit"]) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease-in-out;
+}
+
+#Login-form input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#Login-form input:focus {
+    border-color: var(--yellow);
+}
+#Login-form input[type="submit"] {
+    background-color: var(--yellow);
+    cursor: pointer;
+    font-size: 20px;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+
+#Login-form a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+}
+
