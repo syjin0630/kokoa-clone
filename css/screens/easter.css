@@ -1,9 +1,9 @@
 #easter-egg {
-    background-color: var(--pink);
     width: 100vw;
     height: 100vh;
+    background-color: var(--pink);
 
 }
 #easter-egg span {
-    font-size: 36px;;
+    font-size: 36px;
 }
