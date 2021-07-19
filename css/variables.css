@@ -1,4 +1,8 @@
 :root {
     --yellow: #ffe600;
     --horizontal-space: 25px;
+    --main-border: 1px solid rgba(0, 0, 0, 0.3);
+    --opacity-color: rgba(0, 0, 0, 0.5);
+    --pink: #fd3c93;
+    --gray: rgb(209, 209, 209);
 }

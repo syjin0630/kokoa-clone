@@ -1,0 +1,33 @@
+@keyframes bigsmall {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
+.settings__setting {
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.settings__setting i {
+    will-change: transform;
+    margin-right: 20px;
+    font-size: 22px;
+    animation: bigsmall 1s ease-in-out infinite;
+  
+}
+.settings__setting:nth-child(2) i {
+    animation-delay: 0.5s;
+}
+
+.settings__setting-column:last-child {
+    opacity: 0.5;
+}
