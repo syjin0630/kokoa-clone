@@ -2,8 +2,19 @@
     width: 100vw;
     height: 100vh;
     background-color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 
 }
 #easter-egg span {
-    font-size: 36px;
+    font-size: 25px;
+    color: white;
+    margin: 5px;
+}
+#easter-egg a span{
+   
+   font-size: 10px;
 }
