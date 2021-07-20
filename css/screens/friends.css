@@ -19,6 +19,7 @@
     border-top: var(--main-border);
     padding-top: 15px;
     margin: 7px 0px;
+    align-items: center;
 }
 
 .friends-screen__channel-header,
@@ -41,12 +42,12 @@
     background-color: var(--pink);
     color: white;
     position: absolute;
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
-    top: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 40vh 0px;
+    top: 0%;
     font-size: 132px;
     animation: hideSplashScreen 0.5s ease-in-out forwards;
     animation-delay: 0.5s;
