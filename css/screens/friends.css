@@ -14,13 +14,20 @@
 .friends-screen {
     padding: 0px var(--horizontal-space);
 }
-.friends-screen__channel {
-    margin-top: 25px;
-    
-    border-top: var(--main-border);
+.friends-screen__channel,
+.friends-screen__friends-list {
+    border-bottom: var(--main-border);
     padding-top: 15px;
 }
-.friends-screen__channel-header {
+.friends-screen__channel {
+    border-top: var(--main-border);
+    
+ }
+.friends-screen__friends-list {
+    margin: 7px 0px;
+  }
+.friends-screen__channel-header,
+.friends-screen__friends-list-header {
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
@@ -48,4 +55,26 @@
     font-size: 132px;
     animation: hideSplashScreen 0.5s ease-in-out forwards;
     animation-delay: 0.5s;
+}
+.friends-list-music {
+   
+    height: 25px;
+    border: 1px solid var(--pink);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    color: var(--pink);
+    padding: 5px;
+   
+    align-items: center;
+    font-size: 15px;
+
+}
+.friends-list-music i {
+    margin-right: 5px;
+}
+.friends-screen__Friends-list-header {
+    display: flex;
+    justify-content: space-between;
+
 }
