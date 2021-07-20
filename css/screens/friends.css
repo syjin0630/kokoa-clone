@@ -16,16 +16,11 @@
 }
 .friends-screen__channel,
 .friends-screen__friends-list {
-    border-bottom: var(--main-border);
-    padding-top: 15px;
-}
-.friends-screen__channel {
     border-top: var(--main-border);
-    
- }
-.friends-screen__friends-list {
+    padding-top: 15px;
     margin: 7px 0px;
-  }
+}
+
 .friends-screen__channel-header,
 .friends-screen__friends-list-header {
     margin-bottom: 30px;
@@ -57,15 +52,15 @@
     animation-delay: 0.5s;
 }
 .friends-list-music {
-   
-    height: 25px;
+   width: 130px;
+    
     border: 1px solid var(--pink);
     border-radius: 30px;
     display: flex;
     flex-direction: row;
     color: var(--pink);
-    padding: 5px;
-   
+    padding: 10px;
+   justify-content: space-between;
     align-items: center;
     font-size: 15px;
 
