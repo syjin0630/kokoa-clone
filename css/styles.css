@@ -34,3 +34,17 @@ body {
     padding: 0px var(--horizontal-space);
     
 }
+@keyframes bounce{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+       transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+i:hover {
+animation: bounce 0.5s linear;
+}
